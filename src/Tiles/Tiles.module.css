@@ -7,8 +7,8 @@
   margin: 10px 0px;
   flex: 1;
   display: grid;
-  column-gap: 10px;
-  row-gap: 10px;
+  column-gap: 20px;
+  row-gap: 20px;
   grid-template-columns: auto auto;
 }
 .gridItem {
@@ -23,4 +23,25 @@
   color: #13b4f4;
   font-size: 20px;
   font-weight: bolder;
+}
+
+.gridItemWrapper {
+  display: flex;
+  box-sizing: border-box;
+  height: calc(100% - 24px);
+  flex: 1;
+}
+.imageDiv {
+  align-content:center
+}
+
+.alertIcon{
+  margin-top: auto ;
+  width: 70px;
+  border-radius: 11px;
+  padding: 50px;
+  display: block;
+}
+.gridContent {
+  padding: 40px;
 }
