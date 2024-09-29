@@ -7,6 +7,7 @@ function App() {
     <div className={classes.app}>
       <Navbar></Navbar>
       <Tiles></Tiles>
+      jellooooo
     </div>
   )
 }

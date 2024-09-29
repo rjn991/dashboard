@@ -1,4 +1,26 @@
 .tileWrapper {
-    background-color: aquamarine;
-    flex: 1;
+  margin: 0px 5vw;
+  flex: 1;
+  display: flex;
+}
+.gridContainer {
+  margin: 10px 0px;
+  flex: 1;
+  display: grid;
+  column-gap: 10px;
+  row-gap: 10px;
+  grid-template-columns: auto auto;
+}
+.gridItem {
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  background-color: rgba(17, 25, 40, 0.75);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+  padding: 10px 20px;
+}
+.heading {
+  color: #13b4f4;
+  font-size: 20px;
+  font-weight: bolder;
 }
