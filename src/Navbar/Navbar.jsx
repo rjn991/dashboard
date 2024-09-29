@@ -1,10 +1,10 @@
 import classes from "./Navbar.module.css";
-import { useState,useEffect } from "react";
-const Navbar = () => {
-  const [currTime,setCurrTime] = useState(new Date().toLocaleTimeString());
+import { useState, useEffect } from "react";
+const Navbar = ({ alertCount, showModal }) => {
+  const [currTime, setCurrTime] = useState(new Date().toLocaleTimeString());
   useEffect(() => {
     const timer = setInterval(() => {
-      setCurrTime(new Date().toLocaleTimeString()); 
+      setCurrTime(new Date().toLocaleTimeString());
     }, 1000);
     return () => clearInterval(timer);
   }, []);
@@ -14,7 +14,8 @@ const Navbar = () => {
         <h1>Dashboard</h1>
       </div>
       <div className={classes.right}>
-        <p>Toggle</p>
+        <p> count {alertCount}</p>
+        <p style={{cursor:'pointer',textDecoration:'underline'}} onClick={()=>showModal(true)}>Toggle</p>
         <p>{currTime}</p>
       </div>
     </div>
