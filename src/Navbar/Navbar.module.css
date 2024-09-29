@@ -1,0 +1,15 @@
+.navbarwrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.left h1 {
+    margin: 5px 20px;
+}
+.right {
+    display: flex;
+    margin: 5px 20px;
+}
+.right p {
+    margin-left: 20px;
+}
