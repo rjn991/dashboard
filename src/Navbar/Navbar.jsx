@@ -14,7 +14,7 @@ const Navbar = ({ alertCount, showModal }) => {
         <h1>Dashboard</h1>
       </div>
       <div className={classes.right}>
-        <p> count {alertCount}</p>
+        <p className={classes.totalCount}> Total Alerts : {alertCount}</p>
         <p style={{cursor:'pointer',textDecoration:'underline'}} onClick={()=>showModal(true)}>Toggle</p>
         <p>{currTime}</p>
       </div>

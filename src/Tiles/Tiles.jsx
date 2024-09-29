@@ -6,9 +6,6 @@ import mobile from "../assets/mobile.svg";
 import idle from "../assets/idle.svg";
 
 const Tiles = ({gunCount,uniformCount,mobileCount,idleCount,gunColor,uniformColor,mobileColor,idleColor}) => {
-  
-
-
   return (
     <div className={classes.tileWrapper}>
       <div className={classes.gridContainer}>
