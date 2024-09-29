@@ -21,3 +21,15 @@
     border-radius: 5px;
     cursor: default;
 }
+
+@media only screen and (max-width: 768px) {
+ .navbarwrapper {
+    display: block;
+ }
+ .right {
+    margin:  5px 0px;
+ }
+ .right p:last-of-type {
+    display: none;
+ }
+}
